@@ -177,7 +177,7 @@ fun WeatherContent(weather: WeatherResponse) {
                         text = """
                             • Aplikace používá architekturu MVVM (Model-View-ViewModel).
                             • Data jsou získávána z WeatherAPI.com pomocí knihovny Retrofit.
-                            • JSON odpověď je deserializována pomocí knihovny Moshi.
+                            • JSON odpověď je deserializována pomocí knihovny Gson.
                             • Asynchronní operace jsou zpracovány pomocí Kotlin Coroutines.
                             • UI je vytvořeno pomocí Jetpack Compose.
                             • Obrázky jsou načítány pomocí knihovny Coil.

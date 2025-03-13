@@ -3,7 +3,7 @@ package com.example.http.network
 import com.example.http.data.WeatherResponse
 import retrofit2.Response
 import retrofit2.Retrofit
-import retrofit2.converter.moshi.MoshiConverterFactory
+import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -35,7 +35,7 @@ interface WeatherService {
         
         // API klíč pro WeatherAPI.com - pro výukové účely
         // V reálné aplikaci by byl klíč v BuildConfig nebo proměnných prostředí
-        private const val API_KEY = "d5237c1750b7400d92e125158243103"
+        private const val API_KEY = "d977b436c0c64470b7584823251303"
         
         /**
          * Vytvoří instanci WeatherService pro komunikaci s API
@@ -43,7 +43,7 @@ interface WeatherService {
         fun create(): WeatherService {
             val retrofit = Retrofit.Builder()
                 .baseUrl(BASE_URL)
-                .addConverterFactory(MoshiConverterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create())
                 .build()
             
             return retrofit.create(WeatherService::class.java)

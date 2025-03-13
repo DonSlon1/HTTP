@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.http"
-        minSdk = 34
+        minSdk = 29
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -51,8 +51,8 @@ dependencies {
     
     // Retrofit for API calls
     implementation(libs.retrofit)
-    implementation(libs.converter.moshi)
-    implementation(libs.moshi)
+    implementation(libs.converter.gson)
+    implementation(libs.gson)
     
     // Coil for image loading
     implementation(libs.coil)

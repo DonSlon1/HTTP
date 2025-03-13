@@ -1,10 +1,12 @@
 package com.example.http.data
 
+import com.google.gson.annotations.SerializedName
+
 /**
  * Model třídy pro práci s daty z API
  * 
  * Tato třída představuje model odpovědi API počasí.
- * Používá se pro deserializaci JSON odpovědi pomocí Moshi konvertoru.
+ * Používá se pro deserializaci JSON odpovědi pomocí Gson konvertoru.
  */
 
 data class WeatherResponse(
